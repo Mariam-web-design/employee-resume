@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Background Check Information Collection</title>
+    <link rel="stylesheet" href="./resume.css">
+</head>
+
+<body>
+    <!-- Company Logo and Name -->
+    <div class="header">
+        <img src="./image.png" alt="Vista Meadows Logistics Logo" class="logo" />
+        <h1>Vista Meadows Logistics</h1>
+    </div>
+
+    <!-- Personal Information -->
+    <div class="form-container">
+        <p>Please complete the following form with accurate and complete information to facilitate a standard background
+            check. all information will be kept cofidential.</p>
+        <h3>Personal Information</h3>
+        <form>
+            <label>Full Legal Name:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Father's full name:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Mother's full name:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Mother maiden name:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>City of birth:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Current address:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Mother place of birth:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Father place of birth:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>SSN:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <label>Phone number:</label>
+            <input type="text" placeholder="Type here" required />
+
+            <h3>Employment History</h3>
+            <p>please list your work history starting woth your most recent position.</p>
+            <div id="employment-section">
+                <div class="job-entry">
+                    <label>Company Name:</label>
+                    <input type="text" placeholder="Type here" required />
+
+                     <label>Official Job Title:</label>
+                    <input type="text" placeholder="Type here" required />
+
+                     <label>Start Date:</label>
+                    <input type="text" placeholder="Type here - Month and Year" required />
+
+                     <label>End Date:</label>
+                    <input type="text" placeholder="Type here - Month and Year, or "Present" required />
+
+                     <label>Reason for Leaving:</label>
+                    <input type="text" placeholder="Type here" required />
+                </div>
+            </div>
+
+            <button type="button" onclick="addJob()">+Add More</button><br><br>
+            <button type="submit">Submit Resume</button>
+
+            <h3>Certifications and Licenses</h3>
+            <div id="cert-section">
+                <div class="cert-entry">
+                    <label>Name of Certification:</label>
+                    <input type="text" placeholder="Type here" required/>
+
+                    <label>Issuing Authority</label>
+                    <input type="text" placeholder="Type here" required/>
+
+                    <label>Issue Date</label>
+                    <input type="text" placeholder="Type here" required/>
+                </div>
+            </div>
+
+            <button type="button" onclick="addCert()">+ Add More</button>
+        </form>
+    </div>
+    <script src="./resume.js"></script>
+</body>
+
+</html>
